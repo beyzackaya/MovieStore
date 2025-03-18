@@ -1,0 +1,18 @@
+@model MovieStore.Models.Movie
+
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+<div class="container mt-4">
+    <div class="card shadow-sm">
+        <img src="@Model.ImageUrl" class="card-img-top" alt="@Model.Title">
+        <div class="card-body">
+            <h2 class="card-title">@Model.Title</h2>
+            <p class="card-text"><strong>Director:</strong> @Model.Director</p>
+            <p class="card-text"><strong>Stars:</strong> @string.Join(", ", Model.Stars)</p>
+            <p class="card-text"><strong>Year:</strong> @Model.ReleaseYear</p>
+            <a asp-controller="Cart" asp-action="AddToCart" asp-route-id="@Model.MovieID" class="btn btn-success btn-sm">Add to Cart</a>
+        </div>
+    </div>
+</div>
