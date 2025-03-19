@@ -30,6 +30,10 @@
 </head>
 <body>
     <div class="container">
+        @if (TempData["Message"] != null)
+        {
+            <div class="alert alert-warning">@TempData["Message"]</div>
+        }
         <img src="@Model.ImageUrl" alt="@Model.Alt" class="movie-image">
         <h2>@Model.Title</h2>
         <p><strong>Director:</strong> @Model.Director</p>

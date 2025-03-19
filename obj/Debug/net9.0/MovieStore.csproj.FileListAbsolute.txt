@@ -109,7 +109,6 @@
 /Users/beyzackaya/gitHub/MovieStore/obj/Debug/net9.0/MovieStore.RazorAssemblyInfo.cache
 /Users/beyzackaya/gitHub/MovieStore/obj/Debug/net9.0/MovieStore.RazorAssemblyInfo.cs
 /Users/beyzackaya/gitHub/MovieStore/obj/Debug/net9.0/scopedcss/bundle/MovieStore.styles.css
-/Users/beyzackaya/gitHub/MovieStore/obj/Debug/net9.0/compressed/tfwvq7jdrr-b9sayid5wm.gz
 /Users/beyzackaya/gitHub/MovieStore/obj/Debug/net9.0/compressed/o6gnufx9cn-61n19gt1b8.gz
 /Users/beyzackaya/gitHub/MovieStore/obj/Debug/net9.0/compressed/b77nt7c8jc-xtxxf3hu2r.gz
 /Users/beyzackaya/gitHub/MovieStore/obj/Debug/net9.0/compressed/0cz6il0422-bqjiyaj88i.gz
@@ -185,3 +184,5 @@
 /Users/beyzackaya/gitHub/MovieStore/obj/Debug/net9.0/MovieStore.pdb
 /Users/beyzackaya/gitHub/MovieStore/obj/Debug/net9.0/MovieStore.genruntimeconfig.cache
 /Users/beyzackaya/gitHub/MovieStore/obj/Debug/net9.0/ref/MovieStore.dll
+/Users/beyzackaya/gitHub/MovieStore/obj/Debug/net9.0/MovieStore.sourcelink.json
+/Users/beyzackaya/gitHub/MovieStore/obj/Debug/net9.0/compressed/tfwvq7jdrr-6a6n0qh8nf.gz

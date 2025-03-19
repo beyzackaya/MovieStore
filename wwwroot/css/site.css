@@ -19,6 +19,8 @@ html {
 
 body {
   margin-bottom: 60px;
+  background-color: #333;
+  color: #fff;
 }
 
 .form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
@@ -28,4 +30,46 @@ body {
 
 .form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
   text-align: start;
+}
+
+.top-bar {
+  background-color: #222;
+  padding: 10px;
+  text-align: right;
+}
+
+.user-name {
+  color: #ffc107;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.movie-item {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.movie-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.movie-item p {
+  color: #ffc107;
+  font-weight: bold;
+}
+
+.btn-warning {
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+a {
+  color: #ffc107;
+}
+
+a:hover {
+  color: #fff;
 }

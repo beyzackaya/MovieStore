@@ -1,22 +1,75 @@
 @model List<MovieStore.Models.Movie>
 
-@{
-    ViewData["Title"] = "Cart";
-}
-
-<h2>Shopping Cart</h2>
-<p>Your selected movies will appear here.</p>
-
-@if (Model.Count == 0)
-{
-    <p>No movies in your cart.</p>
-}
-else
-{
-    <ul>
-        @foreach (var movie in Model)
-        {
-            <li>@movie.Alt</li>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        .movie-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #f8f9fa;
+            max-width: 250px; /* Kart genişliğini küçült */
+            flex: 1 1 250px; /* Flexbox ile genişliği ayarla */
         }
-    </ul>
-}
+        .movie-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .movie-details {
+            margin-top: 10px;
+        }
+        .btn-remove {
+            margin-top: 10px;
+        }
+        .cart-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container mt-4">
+    <h3 class="text-warning">Shopping Cart</h3>
+    @if (TempData["OrderMessage"] != null)
+    {
+        <div class="alert alert-success">@TempData["OrderMessage"]</div>
+    }
+    @if (Model.Count == 0)
+    {
+        <p>No movies in your cart.</p>
+    }
+    else
+    {
+        <div class="cart-container">
+            @foreach (var movie in Model)
+            {
+                <div class="movie-item">
+                    <img src="@movie.ImageUrl" alt="@movie.Alt" class="img-fluid">
+                    <div class="movie-details">
+                        <h4>@movie.Title</h4>
+                        <p><strong>Director:</strong> @movie.Director</p>
+                        <p><strong>Stars:</strong> @movie.Stars</p>
+                        <p><strong>Release Year:</strong> @movie.ReleaseYear</p>
+                        <form method="post" action="@Url.Action("RemoveFromCart", "Cart", new { id = movie.MovieID })">
+                            <button type="submit" class="btn btn-danger btn-remove">Remove from Cart</button>
+                        </form>
+                    </div>
+                </div>
+            }
+        </div>
+        <form method="post" action="@Url.Action("ConfirmOrder", "Cart")">
+            <button type="submit" class="btn btn-success mt-4">Confirm Order</button>
+        </form>
+    }
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -11,5 +11,12 @@ namespace MovieStore.Models
         public string Alt { get; set; }
         public bool Hidden { get; set; }
     }
+
+    public class Category
+    {
+        public int CategoryID { get; set; }
+        public string Name { get; set; }
+        public List<Movie> Movies { get; set; }
+    }
 }
 
