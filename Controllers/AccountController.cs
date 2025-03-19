@@ -7,28 +7,23 @@ namespace MovieStore.Controllers
         [HttpGet]
         public IActionResult Login()
         {
-            // Login sayfasını render ediyoruz
             return View();
         }
 
         [HttpPost]
         public IActionResult Login(string firstName, string lastName)
         {
-            // Kullanıcı bilgilerini çerezlere kaydediyoruz
             var userInfo = $"{firstName} {lastName}";
             Response.Cookies.Append("UserInfo", userInfo);
 
-            // Anasayfaya yönlendir
             return RedirectToAction("Index", "Home");
         }
 
         public IActionResult Logout()
         {
-            // Çerezleri temizliyoruz
             Response.Cookies.Delete("UserInfo");
-            HttpContext.Session.Clear(); // Oturum verilerini temizle
+            HttpContext.Session.Clear();
 
-            // Anasayfaya yönlendir
             return RedirectToAction("Index", "Home");
         }
     }
