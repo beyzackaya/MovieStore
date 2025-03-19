@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/beyzackaya/Desktop/MovieStore/MovieStore.csproj": {}
+    "/Users/beyzackaya/gitHub/MovieStore/MovieStore.csproj": {}
   },
   "projects": {
-    "/Users/beyzackaya/Desktop/MovieStore/MovieStore.csproj": {
+    "/Users/beyzackaya/gitHub/MovieStore/MovieStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/beyzackaya/Desktop/MovieStore/MovieStore.csproj",
+        "projectUniqueName": "/Users/beyzackaya/gitHub/MovieStore/MovieStore.csproj",
         "projectName": "MovieStore",
-        "projectPath": "/Users/beyzackaya/Desktop/MovieStore/MovieStore.csproj",
+        "projectPath": "/Users/beyzackaya/gitHub/MovieStore/MovieStore.csproj",
         "packagesPath": "/Users/beyzackaya/.nuget/packages/",
-        "outputPath": "/Users/beyzackaya/Desktop/MovieStore/obj/",
+        "outputPath": "/Users/beyzackaya/gitHub/MovieStore/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/beyzackaya/.nuget/NuGet/NuGet.Config"

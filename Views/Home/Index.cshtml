@@ -20,13 +20,42 @@
     <div class="container mt-4">
         <h3 class="text-warning">Latest Trailers</h3>
         <div class="row" id="latest-trailers">
-            <div class="col-md-2 movie-item"><img src="movie1.jpg" alt="Movie 1"></div>
-            <div class="col-md-2 movie-item"><img src="movie2.jpg" alt="Movie 2"></div>
-            <div class="col-md-2 movie-item"><img src="movie3.jpg" alt="Movie 3"></div>
-            <div class="col-md-2 movie-item"><img src="movie4.jpg" alt="Movie 4"></div>
-            <div class="col-md-2 movie-item"><img src="movie5.jpg" alt="Movie 5"></div>
-            <div class="col-md-2 movie-item hidden"><img src="movie6.jpg" alt="Movie 6"></div>
-            <div class="col-md-2 movie-item hidden"><img src="movie7.jpg" alt="Movie 7"></div>
+            <!-- Tıklanabilir film öğeleri -->
+            <div class="col-md-2 movie-item">
+                <a href="@Url.Action("MovieInfo", "Home", new { id = 1 })">
+                    <img src="movie1.jpg" alt="Movie 1">
+                </a>
+            </div>
+            <div class="col-md-2 movie-item">
+                <a href="@Url.Action("MovieInfo", "Home", new { id = 2 })">
+                    <img src="movie2.jpg" alt="Movie 2">
+                </a>
+            </div>
+            <div class="col-md-2 movie-item">
+                <a href="@Url.Action("MovieInfo", "Home", new { id = 3 })">
+                    <img src="movie3.jpg" alt="Movie 3">
+                </a>
+            </div>
+            <div class="col-md-2 movie-item">
+                <a href="@Url.Action("MovieInfo", "Home", new { id = 4 })">
+                    <img src="movie4.jpg" alt="Movie 4">
+                </a>
+            </div>
+            <div class="col-md-2 movie-item">
+                <a href="@Url.Action("MovieInfo", "Home", new { id = 5 })">
+                    <img src="movie5.jpg" alt="Movie 5">
+                </a>
+            </div>
+            <div class="col-md-2 movie-item hidden">
+                <a href="@Url.Action("MovieInfo", "Home", new { id = 6 })">
+                    <img src="movie6.jpg" alt="Movie 6">
+                </a>
+            </div>
+            <div class="col-md-2 movie-item hidden">
+                <a href="@Url.Action("MovieInfo", "Home", new { id = 7 })">
+                    <img src="movie7.jpg" alt="Movie 7">
+                </a>
+            </div>
         </div>
         <button class="btn btn-warning mt-2" onclick="showMore('latest-trailers')">See All</button>
     </div>

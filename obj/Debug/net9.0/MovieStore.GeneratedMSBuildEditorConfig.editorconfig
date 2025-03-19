@@ -9,53 +9,53 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = MovieStore
 build_property.RootNamespace = MovieStore
-build_property.ProjectDir = /Users/beyzackaya/Desktop/MovieStore/
+build_property.ProjectDir = /Users/beyzackaya/gitHub/MovieStore/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/beyzackaya/Desktop/MovieStore
+build_property.MSBuildProjectDirectory = /Users/beyzackaya/gitHub/MovieStore
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[/Users/beyzackaya/Desktop/MovieStore/Views/Account/Login.cshtml]
+[/Users/beyzackaya/gitHub/MovieStore/Views/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/beyzackaya/Desktop/MovieStore/Views/Cart/Index.cshtml]
+[/Users/beyzackaya/gitHub/MovieStore/Views/Cart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2FydC9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/beyzackaya/Desktop/MovieStore/Views/Home/Index.cshtml]
+[/Users/beyzackaya/gitHub/MovieStore/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/beyzackaya/Desktop/MovieStore/Views/Home/Privacy.cshtml]
+[/Users/beyzackaya/gitHub/MovieStore/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/beyzackaya/Desktop/MovieStore/Views/Movie/Details.cshtml]
+[/Users/beyzackaya/gitHub/MovieStore/Views/Movie/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTW92aWUvRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/beyzackaya/Desktop/MovieStore/Views/Shared/Error.cshtml]
+[/Users/beyzackaya/gitHub/MovieStore/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/beyzackaya/Desktop/MovieStore/Views/Shared/_Layout.cshtml]
+[/Users/beyzackaya/gitHub/MovieStore/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/beyzackaya/Desktop/MovieStore/Views/Shared/_ValidationScriptsPartial.cshtml]
+[/Users/beyzackaya/gitHub/MovieStore/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/beyzackaya/Desktop/MovieStore/Views/_ViewImports.cshtml]
+[/Users/beyzackaya/gitHub/MovieStore/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/beyzackaya/Desktop/MovieStore/Views/_ViewStart.cshtml]
+[/Users/beyzackaya/gitHub/MovieStore/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
