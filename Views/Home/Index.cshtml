@@ -17,56 +17,42 @@
     </style>
 </head>
 <body>
-    <div class="container mt-4">
-        <h3 class="text-warning">Latest Trailers</h3>
-        <div class="row" id="latest-trailers">
-            <!-- Tıklanabilir film öğeleri -->
-            <div class="col-md-2 movie-item">
-                <a href="@Url.Action("MovieInfo", "Home", new { id = 1 })">
-                    <img src="movie1.jpg" alt="Movie 1">
+@{
+    var movies = new List<dynamic>
+    {
+        new { Id = 1, Title = "X-Men: The Last Stand", Image = "movie1.jpg", Alt = "Movie 1", Hidden = false },
+        new { Id = 2, Title = "Spider Man 2", Image = "movie2.jpg", Alt = "Movie 2", Hidden = false },
+        new { Id = 3, Title = "Spider Man 3", Image = "movie3.jpg", Alt = "Movie 3", Hidden = false },
+        new { Id = 4, Title = "Valkyrie", Image = "movie4.jpg", Alt = "Movie 4", Hidden = false },
+        new { Id = 5, Title = "Gladiator", Image = "movie5.jpg", Alt = "Movie 5", Hidden = false },
+        new { Id = 6, Title = "Movie 6", Image = "movie6.jpg", Alt = "Movie 6", Hidden = true },
+        new { Id = 7, Title = "Movie 7", Image = "movie7.jpg", Alt = "Movie 7", Hidden = true }
+    };
+}
+<div class="container mt-4">
+    <h3 class="text-warning">Latest Trailers</h3>
+    <div class="row" id="latest-trailers">
+        <!-- Tıklanabilir film öğeleri -->
+        @foreach (var movie in movies)
+        {
+            <div class="col-md-2 movie-item @(movie.Hidden ? "hidden" : "")">
+                <a href="@Url.Action("Details", "Movie", new { id = movie.Id })">
+                    <img src="@movie.Image" alt="@movie.Alt">
+                    <p>@movie.Title</p>
                 </a>
             </div>
-            <div class="col-md-2 movie-item">
-                <a href="@Url.Action("MovieInfo", "Home", new { id = 2 })">
-                    <img src="movie2.jpg" alt="Movie 2">
-                </a>
-            </div>
-            <div class="col-md-2 movie-item">
-                <a href="@Url.Action("MovieInfo", "Home", new { id = 3 })">
-                    <img src="movie3.jpg" alt="Movie 3">
-                </a>
-            </div>
-            <div class="col-md-2 movie-item">
-                <a href="@Url.Action("MovieInfo", "Home", new { id = 4 })">
-                    <img src="movie4.jpg" alt="Movie 4">
-                </a>
-            </div>
-            <div class="col-md-2 movie-item">
-                <a href="@Url.Action("MovieInfo", "Home", new { id = 5 })">
-                    <img src="movie5.jpg" alt="Movie 5">
-                </a>
-            </div>
-            <div class="col-md-2 movie-item hidden">
-                <a href="@Url.Action("MovieInfo", "Home", new { id = 6 })">
-                    <img src="movie6.jpg" alt="Movie 6">
-                </a>
-            </div>
-            <div class="col-md-2 movie-item hidden">
-                <a href="@Url.Action("MovieInfo", "Home", new { id = 7 })">
-                    <img src="movie7.jpg" alt="Movie 7">
-                </a>
-            </div>
-        </div>
-        <button class="btn btn-warning mt-2" onclick="showMore('latest-trailers')">See All</button>
-    </div>
-
-    <script>
-        function showMore(categoryId) {
-            let hiddenItems = document.querySelectorAll(`#${categoryId} .hidden`);
-            hiddenItems.forEach(item => item.classList.remove('hidden'));
         }
-    </script>
+    </div>
+    <button class="btn btn-warning mt-2" onclick="showMore('latest-trailers')">See All</button>
+</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function showMore(categoryId) {
+        let hiddenItems = document.querySelectorAll(`#${categoryId} .hidden`);
+        hiddenItems.forEach(item => item.classList.remove('hidden'));
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

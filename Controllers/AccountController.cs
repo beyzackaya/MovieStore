@@ -26,6 +26,7 @@ namespace MovieStore.Controllers
         {
             // Çerezleri temizliyoruz
             Response.Cookies.Delete("UserInfo");
+            HttpContext.Session.Clear(); // Oturum verilerini temizle
 
             // Anasayfaya yönlendir
             return RedirectToAction("Index", "Home");

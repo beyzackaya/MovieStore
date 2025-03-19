@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewData["Title"] - Movie Store</title>
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
 
     <style>
-        /* Üst menü (Top Bar) */
         .top-bar {
             background-color: #222;
             padding: 6px 20px;
@@ -45,14 +43,12 @@
             color: black !important;
         }
 
-        /* Navbar içindeki linklerin (Cart, Home) stilini ayarla */
         .navbar-nav .nav-link {
             color: white !important;
             font-weight: bold;
             transition: color 0.3s ease;
         }
 
-        /* Hover efekti */
         .navbar-nav .nav-link:hover {
             color: #f8d210 !important;
         }
@@ -60,7 +56,6 @@
 </head>
 <body>
 
-    <!-- ÜST MENÜ (Daha Estetik) -->
     <div class="top-bar">
         @if (Context.Request.Cookies["UserInfo"] != null)
         {
@@ -75,7 +70,6 @@
         }
     </div>
 
-    <!-- Ana Menü -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
         <a class="navbar-brand" asp-controller="Home" asp-action="Index">🎬Movie Store</a>
@@ -98,14 +92,13 @@
 
 
     <div class="container mt-4">
-        @RenderBody()  <!-- Sayfanın içeriği buraya eklenecek! -->
+        @RenderBody()  
     </div>
 
     <footer class="bg-dark text-white text-center py-3 mt-4">
         <p>&copy; 2025 Movie Store. All rights reserved.</p>
     </footer>
 
-    <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
